@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        ProgArchive to What.CD, TPB & KAT
-// @version     0.1
+// @version     0.2
 // @namespace   http://paranoideo.com/
 // @description Convierte las ligas de ProgArchives para realizar busquedas en what.cd
 // @include     http://www.progarchives.com/top-prog-albums.asp*
@@ -14,9 +14,9 @@ function cambiarLinks(container){
 	var tdContainer;
 	var items;
 	
-	var urlArtist = "https://ssl.what.cd/torrents.php?action=advanced&artistname="
-	var urlAlbum = "https://ssl.what.cd/torrents.php?action=advanced&groupname="
-	var todo = "https://ssl.what.cd/torrents.php?artistname=GROUPNAME&action=advanced&groupname=ALBUMNAME"
+	var urlArtist = "https://what.cd/artist.php?artistname="
+	var urlAlbum = "https://what.cd/torrents.php?action=advanced&groupname="
+	var todo = "https://what.cd/torrents.php?artistname=GROUPNAME&action=advanced&groupname=ALBUMNAME"
 	
 	var albumSTR = "album";
 	var artistSTR = "artist";
